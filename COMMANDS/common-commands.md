@@ -27,3 +27,10 @@ ubuntu:
 ```
 sudo apt install lm_sensors
 ```
+---
+# *checking cpu architecture
+* You can use this command for checking which binary type to download:
+```
+dpkg --print-architecture
+```
+---
