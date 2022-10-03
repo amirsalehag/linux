@@ -34,3 +34,7 @@ sudo apt install lm_sensors
 dpkg --print-architecture
 ```
 ---
+# *apropos command*
+* You can use `apropos` to search for commands if you dont know the command itself.
+
+---
