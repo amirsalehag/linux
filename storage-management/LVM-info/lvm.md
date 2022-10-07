@@ -44,3 +44,6 @@ LEs are the same and its better to be the same size as its PEs.
 to be performed while writing data on disks which is delt with, by the extent size of the extents (which might be 4Mb), and the extents  
 are for example if we chose raid 0 (or stripe) each block of data (extents) are spread across the PVs one by one as round robin algorithm.  
 * Or istead use Linear mapping, that will assign a range of PEs to an area of LV in order. LE 1-99 map to PV1 and LE 100-347 map onto PV2.
+
+---
+Click on this [link](https://tldp.org/HOWTO/LVM-HOWTO/whatislvm.html) for more beginner explaination.
