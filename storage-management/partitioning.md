@@ -15,3 +15,6 @@ updated in kernels partition table, and after that, we update the filesystem usi
 and then we mount it back to its directory.  
 
 ---
+* You can read this [article](https://oracle-base.com/articles/linux/linux-disk-partitioning) for more info.
+
+---
