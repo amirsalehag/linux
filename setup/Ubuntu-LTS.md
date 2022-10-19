@@ -1,4 +1,4 @@
-# Costom storage management
+# Custom storage management
 ---
 ## LVM
 
@@ -9,5 +9,6 @@ we create an GPT partition and choose the size we want to allocate for `/boot` (
 after that we can do the same for swap partition, but after that, because we want to use lvm,  we select the remaining  
 space and create a GPT partition but with the remaining size, and choose unformatted for filesystem type and create the partition,  
 and then we can choose to create LVM on that partition which we first create the vg and then its lv's.  
+(click on this [link](https://systemzone.net/ubuntu-server-20-04-installation-with-lvm/) for better underestanding.)
 
 ---
