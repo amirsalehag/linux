@@ -38,3 +38,7 @@ dpkg --print-architecture
 * You can use `apropos` to search for commands if you dont know the command itself.
 
 ---
+# *watch command*
+* use `watch` command before any command to update that command each 2s.  
+
+---
