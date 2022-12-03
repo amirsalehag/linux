@@ -42,3 +42,13 @@ dpkg --print-architecture
 * use `watch` command before any command to update that command each 2s.  
 
 ---
+# *setfacl command*
+* If we needed to ssh to another server and remove a file in there but its created by root user and we couldnt use sudo in ssh command,  
+we can set the files directories permission for the user that we specified for ssh, for it to be able to modify the directory or remove the  
+files in it:  
+```
+sudo setfacl -Rm u:<user>:rwx /directory
+```
+and then we can remove its content.  
+
+---
