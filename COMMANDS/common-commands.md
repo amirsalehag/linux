@@ -39,7 +39,7 @@ dpkg --print-architecture
 
 ---
 # *watch command*
-* use `watch` command before any command to update that command each 2s.  
+* Use `watch` command before any command to update that command each 2s.  
 
 ---
 # *setfacl command*
@@ -52,3 +52,8 @@ sudo setfacl -Rm u:<user>:rwx /directory
 and then we can remove its content.  
 
 ---
+*rsync command*
+* you can `rsync`with another port like this:  
+```
+rsync -e 'ssh -p<port number>' <username>@<ip>:~/file ./
+```
