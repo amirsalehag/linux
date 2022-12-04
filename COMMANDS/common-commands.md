@@ -52,7 +52,7 @@ sudo setfacl -Rm u:<user>:rwx /directory
 and then we can remove its content.  
 
 ---
-*rsync command*
+# *rsync command*
 * you can `rsync`with another port like this:  
 ```
 rsync -e 'ssh -p<port number>' <username>@<ip>:~/file ./
