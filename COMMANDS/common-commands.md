@@ -53,7 +53,13 @@ and then we can remove its content.
 
 ---
 # *rsync command*
-* you can `rsync`with another port like this:  
+* You can `rsync`with another port like this:  
 ```
 rsync -e 'ssh -p<port number>' <username>@<ip>:~/file ./
+```
+---
+# *scp command*
+* Copying a directory from local through an jump server, to another server:  
+```
+scp -oProxyCommand="ssh -W %h:%p <username on jumpserver>@<jumpserver ip> -p <port>" -r <directory name> <username>@<servers ip>:<destination>
 ```
