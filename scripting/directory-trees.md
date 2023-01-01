@@ -4,6 +4,6 @@ find . -type d -print | cpio -oO directory.cpio
 ```
 and then we copy this file on the needed host and run this command:
 ```
-cpio -iI dirs.cpio < --no-absolute-filenames  (if we want it to be extracted to the corrent directory) >
+cpio -iI dirs.cpio    < --no-absolute-filenames  (if we want it to be extracted to the corrent directory) >
 ```
 ---
