@@ -11,3 +11,6 @@ do
   container_volume=$(sudo docker inspect "$names" -f '{{ json .HostConfig.Binds }}')
   echo -e "$names" = Volumes: "$container_volume\n"
 done
+
+
+###########   this script orders the docker containers and its volumes   ##############
