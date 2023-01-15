@@ -4,3 +4,10 @@
 exec >> output.log 2>&1
 ```
 ---
+# removing quotes from around a string
+```
+echo '"hi"' | sed -e 's/^"//' -e 's/"$//'
+```
+without `sed` it would have echo'd `"hi"`
+
+---
