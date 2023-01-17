@@ -59,6 +59,14 @@ we can expand the VG by adding a new partition or a disk. we first label the new
 ```
 vgextend vgtest /dev/sdd2
 ```
+* creating an LV with all free space:
+```
+lvcreate -l 100%FREE -n yourlv testvg
+```
+* extending all the free space for lvcreate:  
+```
+lvextend -l 100%FREE /dev/VolGroup00/lv_root
+```
 ---
 # *Mount filesystem on boot*
 * Always remember to do this section.
