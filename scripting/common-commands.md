@@ -11,3 +11,10 @@ echo '"hi"' | sed -e 's/^"//' -e 's/"$//'
 without `sed` it would have echo'd `"hi"`
 
 ---
+# if statement with multiple values
+```
+[[ $databases == @(gwc|map) ]] && echo $databases
+```
+this means that if the `databases` value is one of the values mentioned above, then that statement is correct.  
+
+---
