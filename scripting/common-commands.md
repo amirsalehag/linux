@@ -18,3 +18,10 @@ without `sed` it would have echo'd `"hi"`
 this means that if the `databases` value is one of the values mentioned above, then that statement is correct.  
 
 ---
+# finding the files in a directory without its parent
+```
+find /data/db-backup-daily/platform/ -mindepth 1 -printf "%f\n"
+```
+mindepth will discount the parent directory and printf will only output the last file found in that directory.
+
+---
