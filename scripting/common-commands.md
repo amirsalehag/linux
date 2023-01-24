@@ -25,3 +25,10 @@ find /data/db-backup-daily/platform/ -mindepth 1 -printf "%f\n"
 mindepth will discount the parent directory and printf will only output the last file found in that directory.
 
 ---
+# set
+```
+set -eu
+```
+with -e option we specified that if a command in the shell script fails, the script would exit out, and with -u option, the shell also exit out if a variable is undifined.  
+
+---
