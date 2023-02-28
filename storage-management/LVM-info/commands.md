@@ -65,7 +65,7 @@ lvcreate -l 100%FREE -n yourlv testvg
 ```
 * extending all the free space for lvcreate:  
 ```
-lvextend -l 100%FREE /dev/VolGroup00/lv_root
+lvextend -l +100%FREE /dev/VolGroup00/lv_root
 ```
 ---
 # *Mount filesystem on boot*
