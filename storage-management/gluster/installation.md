@@ -18,6 +18,8 @@ net.ipv4.tcp_keepalive_probes = 5
 
 sysctl -p
 ```
+# installing glusterfs
+instaling gluster [link](https://docs.gluster.org/en/main/Install-Guide/Install/).  
 * making Dispersed Volumes  
 ```
 gluster volume create gv1 disperse 3 redundancy 1 gluster{1..3}:/data/brick0
