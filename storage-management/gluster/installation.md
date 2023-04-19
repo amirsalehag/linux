@@ -30,3 +30,7 @@ gluster peer probe gluster3
 ```
 gluster volume create gv1 disperse 3 redundancy 1 gluster{1..3}:/data/brick0
 ```
+* then we start the volume  
+```
+gluster volume start gv1
+```
