@@ -20,6 +20,12 @@ sysctl -p
 ```
 # installing glusterfs
 instaling gluster [link](https://docs.gluster.org/en/main/Install-Guide/Install/).  
+* first we start gluster processes  
+* peering gluster nodes  
+```
+gluster peer probe gluster2
+gluster peer probe gluster3
+```
 * making Dispersed Volumes  
 ```
 gluster volume create gv1 disperse 3 redundancy 1 gluster{1..3}:/data/brick0
