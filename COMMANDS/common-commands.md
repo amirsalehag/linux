@@ -63,3 +63,8 @@ rsync -e 'ssh -p<port number>' <username>@<ip>:~/file ./
 ```
 scp -oProxyCommand="ssh -W %h:%p <username on jumpserver>@<jumpserver ip> -p <port>" -r <directory name> <username>@<servers ip>:<destination>
 ```
+# *nmap command*
+* Using nmap for scanning a range of network to see what ip and ports are being used:
+```
+nmap -v -n -p- 192.168.178.0/24
+```
