@@ -68,3 +68,17 @@ scp -oProxyCommand="ssh -W %h:%p <username on jumpserver>@<jumpserver ip> -p <po
 ```
 nmap -v -n -p- 192.168.178.0/24
 ```
+# *memory cleaning without process killing*
+* [link](https://docs.kernel.org/admin-guide/sysctl/vm.html#drop-caches) to its kernel document.
+* To free pagecache:
+```
+echo 1 > /proc/sys/vm/drop_caches
+```
+* To free reclaimable slab objects (includes dentries and inodes):
+```
+echo 2 > /proc/sys/vm/drop_caches
+```
+* To free slab objects and pagecache:
+```
+echo 3 > /proc/sys/vm/drop_caches
+```
