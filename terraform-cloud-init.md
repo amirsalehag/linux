@@ -12,6 +12,12 @@ datasource:
   VMware:
     allow_raw_data: true
 manage_etc_hosts: true
+
+...
+
+cloud_init_modules:
+  ...
+  - fs_setup
 ```
 We make a terraform template files for the cloud-init configuration to pass it to the vm's:
 ```
